@@ -121,7 +121,7 @@ $(window).load(function() {
 // Intro text carousel
 $("#owl-intro-text").owlCarousel({
     singleItem : true,
-    autoPlay : 6000,
+    autoPlay : 3000,
     stopOnHover : true,
     navigation : false,
     navigationText : false,
@@ -135,7 +135,7 @@ $("#owl-partners").owlCarousel({
     itemsDesktop : [1199,3],
     itemsDesktopSmall : [980,2],
     itemsTablet: [768,2],
-    autoPlay : 5000,
+    autoPlay : 3000,
     stopOnHover : true,
     pagination : false
 })
