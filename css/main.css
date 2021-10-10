@@ -24,14 +24,17 @@
 }
 
 .page-info {
-  margin:0;
+  margin: 0;
 }
-#page-num{
-  margin-left:1rem;
+
+#page-num {
+  margin-left: 1rem;
 }
-#page-count{
-  margin-left:1rem;
+
+#page-count {
+  margin-left: 1rem;
 }
+
 .error {
   background: orangered;
   color: #fff;

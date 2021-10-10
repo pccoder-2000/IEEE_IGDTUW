@@ -6,7 +6,8 @@
   --box-border: rgba(75, 75, 75, 0.096);
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -21,11 +22,13 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539", endColorstr="#1e272e", GradientType=1);
 }
 
-html *, body * {
+html *,
+body * {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-html>p, body>p {
+html>p,
+body>p {
   font-size: 0.95em;
   font-weight: bold;
   position: absolute;
@@ -48,24 +51,28 @@ html>p, body>p {
   width: 100%;
   box-sizing: border-box;
   margin-top: 100px;
-  background-color: #dbdbdb; /* remove this if needed */
+  background-color: #dbdbdb;
+  /* remove this if needed */
   padding: 100px 0 50px;
   padding-top: 50px;
 }
 
-.carousel__prev, .carousel__next {
+.carousel__prev,
+.carousel__next {
   position: absolute;
   bottom: -15%;
   transition: transform 0.25s ease;
 }
 
-.carousel__prev i, .carousel__next i {
+.carousel__prev i,
+.carousel__next i {
   font-size: 60px;
   color: var(--box-border);
   cursor: pointer;
 }
 
-.carousel__prev:hover, .carousel__next:hover {
+.carousel__prev:hover,
+.carousel__next:hover {
   transform: scale(1.5);
 }
 
@@ -142,7 +149,8 @@ html>p, body>p {
   color: var(--box-border);
 }
 
-.carousel__body .carousel__slider__item .item__3d-frame__box--right, .carousel__body .carousel__slider__item .item__3d-frame__box--left {
+.carousel__body .carousel__slider__item .item__3d-frame__box--right,
+.carousel__body .carousel__slider__item .item__3d-frame__box--left {
   top: 0;
   width: 40px;
   backface-visibility: hidden;
@@ -217,4 +225,88 @@ html>p, body>p {
 
 footer {
   margin-top: 150px;
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+
+}
+
+.fa-instagram::before {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+
+}
+
+.fa-linkedin::before {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+
+}
+
+.fa-telegram::before {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+
+}
+
+
+a i {
+  transition: all 0.3s linear;
+
+}
+
+a:hover i {
+  transform: scale(1.4);
+}
+
+.fa-facebook {
+  color: #0097e6;
+}
+
+.fa-instagram {
+  color: #e84393;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-telegram {
+  color: #0088cc;
 }
