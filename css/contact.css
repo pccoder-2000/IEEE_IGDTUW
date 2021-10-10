@@ -9,11 +9,11 @@ main{
 	background-size: cover;
 }
 .contact-container{
-    height: auto;
-    width: 50%;
+    height: 60%;
+    width: 70%;
     text-align: center;
     background-color: rgba(213, 219, 223, 0.5);
-    border-radius: 20px;
+    border-radius: 15px 50px 30px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
 }
