@@ -322,8 +322,9 @@ body:before {
   
   width:100%;
   display: block;
-  min-width: 5%;
-  height:auto;
+/*   min-width: 5%; */
+  height:300px;
+  min-height:auto;
   object-fit: contain;
 }
 
