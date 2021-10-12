@@ -193,10 +193,12 @@ a, a:hover, a:focus {
 
 /* === Footer === */
 .footer-top {
-	background-color: #363940;
+	background-color: #2121217c;
+	border-top: 1px solid white;
+	margin-top: 2rem;
 }
 .footer {
-	background-color: #2d3035;
+	background-color: #2121217c;
 }
 #subscribe > button[type="submit"] {
     background: none repeat scroll 0 0 #676D75;
