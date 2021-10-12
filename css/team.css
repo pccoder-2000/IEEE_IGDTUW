@@ -1,31 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One');
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Yatra+One");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
-body {
-  background: aliceblue;
+.faculty-team-card{
+  background-color: #212121c7;
+  border-radius: 10px;
+  text-align: center;
+  height: 20%;
 }
-
+.faculty-team-card:hover{
+  background-color: #32e0c3a1;
+  padding: 1rem auto;
+}
+.faculty-team-card img{
+  width: 50%;
+  border-radius: 10px;
+  padding: 1rem auto;
+}
+.faculty-team-card h2{
+  font-size: 1.5rem;
+}
+.faculty-team-details{
+  margin: 1rem auto;
+}
 .wrapper {
   margin-top: 0px;
   text-align: center;
 }
-
 .wrapper h1 {
-  font-family: 'Yatra One', cursive;
   font-size: 48px;
   color: #fff;
   margin-bottom: 25px;
 }
 
-.placement-heading{
+.placement-heading {
   font-size: 18px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .our_team {
@@ -116,46 +130,46 @@ body {
   --box-border: rgba(75, 75, 75, 0.096);
 }
 
-.p-heading{
+.p-heading {
   font-size: 35px;
   text-align: center;
-  padding-top:30px;
-  font-family:Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.placement-heading{
+.placement-heading {
   text-align: center;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
-
-
- .carousel {
+.carousel {
   position: relative;
   display: block;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
   margin-top: 100px;
   margin-bottom: 120px;
   background-color: #dbdbdb; /* remove this if needed */
   padding: 100px 0 50px;
   padding-top: 50px;
-  
-} 
+}
 
-.carousel__prev, .carousel__next {
+.carousel__prev,
+.carousel__next {
   position: absolute;
   bottom: -15%;
   transition: transform 0.25s ease;
-} 
+}
 
-.carousel__prev i, .carousel__next i {
+.carousel__prev i,
+.carousel__next i {
   font-size: 60px;
   color: var(--box-border);
   cursor: pointer;
 }
 
-.carousel__prev:hover, .carousel__next:hover {
+.carousel__prev:hover,
+.carousel__next:hover {
   transform: scale(1.5);
 }
 
@@ -171,13 +185,12 @@ body {
   width: 100%;
   /* padding: 20px 0 50px 0; */
   overflow: hidden;
-} 
+}
 
- .carousel__body .carousel__slider {
+.carousel__body .carousel__slider {
   position: relative;
   transition: transform 1s ease-in-out;
   background: var(--crsl-bg);
- 
 }
 
 .carousel__body .carousel__slider__item {
@@ -208,7 +221,7 @@ body {
   box-shadow: 0px 0px 5px 5px var(--box-shadow);
   transform: rotateX(90deg) translate3d(0px, -20px, 0px);
   opacity: 0.85;
-} 
+}
 
 .carousel__body .carousel__slider__item .item__3d-frame__box {
   display: flex;
@@ -231,9 +244,10 @@ body {
   font-size: 7em;
   width: 100%;
   color: var(--box-border);
- } 
+}
 
-.carousel__body .carousel__slider__item .item__3d-frame__box--right, .carousel__body .carousel__slider__item .item__3d-frame__box--left {
+.carousel__body .carousel__slider__item .item__3d-frame__box--right,
+.carousel__body .carousel__slider__item .item__3d-frame__box--left {
   top: 0;
   width: 40px;
   backface-visibility: hidden;
@@ -251,8 +265,11 @@ body {
   border-right-width: 5px;
   transform: translate3d(-1px, 0, -40px) rotateY(90deg);
   transform-origin: 100%;
-} 
-.carousel__body .carousel__slider__item .item__3d-frame__box .img-and-name-container {
+}
+.carousel__body
+  .carousel__slider__item
+  .item__3d-frame__box
+  .img-and-name-container {
   width: 95%;
   flex-direction: row;
   height: 15vw;
@@ -260,7 +277,11 @@ body {
   min-width: 100%;
 }
 
-.carousel__body .carousel__slider__item .item__3d-frame__box .img-and-name-container .achiever-img {
+.carousel__body
+  .carousel__slider__item
+  .item__3d-frame__box
+  .img-and-name-container
+  .achiever-img {
   height: 27vw;
   width: 80%;
   border-radius: 300px;
@@ -269,12 +290,11 @@ body {
   min-width: 100%;
 }
 
-
+.team_member h3, .team_member span{
+  color: #212121;
+}
 
 /* ===== Endcarousel ===== */
-
-
-
 
 /* ===== Begin footer ===== */
 .footer-top {
@@ -298,118 +318,4 @@ body {
   text-decoration: none;
 }
 
-/*Widget1: Useful Links*/
-ul.imp-links {
-  margin-top: 15px;
-}
 
-ul.imp-links li {
-  padding: 5px 0;
-}
-
-ul.imp-links li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-
-/*Widget3: twitter*/
-.single-tweet {
-  overflow: hidden;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  word-spacing: 2px;
-}
-
-.tweet-content {
-  padding-bottom: 10px;
-  line-height: 1.5em;
-}
-
-.fa-facebook:before {
-  content: "\f09a";
-
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
-
-}
-
-.fa-instagram::before {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
-
-}
-
-.fa-linkedin::before {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
-
-}
-
-.fa-telegram::before {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
-
-}
-
-
-a i {
-  transition: all 0.3s linear;
-
-}
-
-a:hover i {
-  transform: scale(1.4);
-}
-
-.fa-facebook {
-  color: #0097e6;
-}
-
-.fa-instagram {
-  color: #e84393;
-}
-
-.fa-linkedin {
-  color: #0077b5;
-}
-
-.fa-telegram {
-  color: #0088cc;
-}
-
-
-
-/* ===== End footer ===== */

@@ -41,7 +41,7 @@ body .body {
 
 .page {
   overflow: hidden;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 50px 0;
 }
 
@@ -59,6 +59,11 @@ body .body {
 /* Begin Fonts */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background-image: url("https://github.com/AakankshaJha1/IEEE_IGDTUW/blob/main/img/ieee-bg-2.png?raw=true") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-attachment: fixed;
 }
 
 h1,
@@ -123,6 +128,12 @@ p {
 }
 .about-details{
     text-align: justify;
+    background-color: #212121ad;
+    border-radius: 20px;
+}
+.about-details:hover{
+    background-color: #32e0c3a1;
+    color: #212121;
 }
 
 @media screen and (max-width:1024px) {
@@ -413,12 +424,16 @@ section {
 a.rotate-box-1,
 a.rotate-box-2 {
   text-decoration: none;
-  color: #363940;
+  color: #fff;
 }
 
 a.rotate-box-1:hover,
 a.rotate-box-2:hover {
-  color: #676d75;
+  /* background-color: #32e0c3a1;
+  color: #212121;
+  padding: auto 1rem;
+  border-radius: 10px; */
+  color: #fff;
 }
 
 .rotate-box-1 .rotate-box-icon {
@@ -508,6 +523,11 @@ a.rotate-box-2:hover {
 
 .rotate-box-1 .rotate-box-info {
   padding-left: 60px;
+}
+
+.rotate-box-1-wrapper .row{
+    background-color: #212121ad;
+    border-radius: 20px;
 }
 
 /* End rotate box-1 */
@@ -1014,98 +1034,31 @@ ul.imp-links li a {
   text-decoration: none;
   color: #fff;
 }
-
-/*Widget3: twitter*/
-.single-tweet {
-  overflow: hidden;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  word-spacing: 2px;
+.imp-links a:hover{
+    color: #0D7377;
 }
 
-.tweet-content {
-  padding-bottom: 10px;
-  line-height: 1.5em;
+/* ==== Start Footer ===== */
+.media-icons{
+    margin-top: 1rem;
 }
-
-.fa-facebook:before {
-  content: "\f09a";
-
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
+.media-icons a{
+    margin-right: 0.5rem;
 }
-
-.fa-instagram::before {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
+.media-icons i{
+    font-size: 1.6rem;
+    color: #fff;
 }
-
-.fa-linkedin::before {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
+.media-icons i:hover{
+    color: #32E0C4;
 }
-
-.fa-telegram::before {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: #f5f6fa;
-  border-radius: 50px;
-  text-align: center;
-  margin: 10px;
-  line-height: 110px;
+.contact-email{
+    color: #fff;
 }
-
-a i {
-  transition: all 0.3s linear;
+.contact-email:hover{
+    color: #0D7377;
+    text-decoration: none;
 }
-
-a:hover i {
-  transform: scale(1.4);
-}
-
-.fa-facebook {
-  color: #0097e6;
-}
-
-.fa-instagram {
-  color: #e84393;
-}
-
-.fa-linkedin {
-  color: #0077b5;
-}
-
-.fa-telegram {
-  color: #0088cc;
-}
-
 /* ===== End footer ===== */
 
 /* ===== Begin page header ===== */
@@ -1344,3 +1297,10 @@ p.subtitle {
 }
 
 /* ===== End buttons ===== */
+
+@media screen and (max-width:1024px) {
+    body{
+        background-size: cover;
+        /* background-size: 80%; */
+    }
+}

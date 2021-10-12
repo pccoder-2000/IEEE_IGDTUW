@@ -48,48 +48,56 @@ html>p, body>p {
 /*************************** section 1 img and heading Start ***********************/
 
 .img-trophy{
-  object-fit: cover;
+  object-fit:cover;
   background-repeat:no-repeat ;
-  /* background-size: 1500px 700px; */
-  background-size: 100% 19% ;
-  max-width: 100%;
-  display: block; 
-  min-height: 100%;
-  width: auto;
+  /* background-size: 100vw 50vw; */
+  background-size: 100% 18% ;
+  width: 100%;
   height: auto;
-  object-position: 50% 50%;
-   
+  
+}
+
+@keyframes animation{
+  from{color: rgb(234, 240, 240);}
+  to{color: rgb(19, 221, 221);}
 }
 
 .heading-main{
   padding-top: 150px;
-  padding-left:390px;
-  font-size: 55px;
+  /* padding-left:390px; */
+  text-align: center;
+  font-size: 4.5vw;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:rgb(8, 29, 29);
+  color:rgb(239, 247, 247);
+  animation-name: animation;
+  animation-duration:7s;
+  animation-iteration-count:infinite;
+  
 }
 
+
 .text-heading1{
-  /* text-align: center; */
-  font-size: 23px;
-  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.5vw;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Heebo', sans-serif;
   margin-top: 40px;
-  padding-left: 350px;
+  color: #cfc6c6;
+  /* padding-left: 350px; */
   
 }
 
 
 .wie{
 padding-top: 50px;
-font-size: 30px;
-font-style: italic;
-font-family: 'Birthstone', cursive;
-color:#ca2b2b;
-/* background-color:#E4D8DC; */
+font-size: 1.2vw;
+/* font-family: 'Yantramanav', sans-serif; */
+font-family: 'Heebo', sans-serif;
+color:#d8cccc;
 padding-bottom: 30px;
 padding-top: 9px;
 margin-top: 50px; 
-padding-left: 350px;
+text-align: center;
 letter-spacing: 2px;
 }
 
@@ -108,10 +116,13 @@ body:before,
   vertical-align: middle;
   
 }
+
 body:before {
   height: 100%;
   content: '';
 }
+
+
 .btn,
 .btn:before,
 .btn:after {
@@ -119,12 +130,13 @@ body:before {
   padding: 1em 4em;
   display: inline-block;
   background-color: rgba(2, 15, 26, 0.6);
-  color: #fff;
+  color: rgb(231, 220, 220);
   border-radius: 6px;
   position: relative;
   -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1);
   transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1);
   box-shadow: 0 0 0 rgba(0,0,0,0);
+  
   
 
 }
@@ -134,6 +146,7 @@ body:before {
   position: absolute;
   content: attr(data-title);
   z-index: -1;
+ 
 }
 
 .btn:before {
@@ -145,25 +158,31 @@ body:before {
 .btn:after {
   bottom: -0.1em;
   left: -0.1em;
+  
  
 }
 
 .btn:hover {
- 
-  background-color: rgb(14, 15, 15);
+   /* background-color: rgb(14, 15, 15); */
   box-shadow: 0.05em 0.05em 0.1em rgba(0,0,0,0.5); 
-  color: #fff;
+  color: rgb(252, 248, 248);
+  background-color:gray;
+
 }
 
 .btn:hover:before {
   top: 0;
   right: 0;
+ 
 }
 .btn:hover:after {
   bottom: 0;
   left: 0;
+  
 }
-
+.btn{
+  background-color:#302d2d;
+}
 /*************************** Buttons end ***********************/
 
 
@@ -179,6 +198,7 @@ body:before {
 /*************************** card Start ***********************/
 .card{
   height: calc(100vh/1.4);
+ 
 }
 
 .card-img-top {
@@ -193,6 +213,12 @@ body:before {
 
 .card-title {
   padding-top: 10px;
+  color:black;
+  font-size: 16px;
+}
+
+.card-subtitle{
+  color: #2f3539;
 }
 
 
@@ -221,7 +247,8 @@ body:before {
 }
 
 .middle-container{
-  display: flex;
+  display:flex;
+  
 }
 
 
@@ -380,12 +407,14 @@ body:before {
 
 
 
+
 /********************** start**********************/
 
-.middle-container2{
-  display:flex;
-  margin-left: 180px;
+.ieee-head{
+  color:#070707;
 }
+
+
 
 h2{
   font-size: 12px;
@@ -393,10 +422,11 @@ h2{
 
 
 .heading2{
-  font-size: 40px;
+  font-size: 32px;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   padding-top: 50px;
+  color: #070707;
   
 }
 
@@ -463,4 +493,19 @@ body {
 
 footer {
   margin-top: 150px;
+ 
 }
+
+@media only screen  and (max-width:400px) {
+  .img-trophy {
+      background-image: url(img/achievement-pics/trophy.jpeg);
+      
+  }
+} 
+
+
+
+
+
+
+
