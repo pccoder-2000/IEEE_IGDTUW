@@ -9,17 +9,21 @@ Master Stylesheet
 	Version:	1.0	
 
 ---------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
     height: 100% !important;
 }
 
 body {
-    position: relative;
+    /* position: relative; */
     height: 100%;
     font-size: 14px;
-    color: #363940;
+    color: #212121;
+    /* background-color: #212121; */
+    font-family: 'Heebo', sans-serif;
     margin: auto;
+
 }
 
 body .body {
@@ -190,11 +194,12 @@ section {
 .navbar-brand {
     background-repeat: no-repeat;
     background-position: left center;
-    width: 150px;
-    height: auto;
-    padding: 24px 0;
+    height: 100%;
+    background: url("../img/LOGOBW.png");
+    padding: 1rem 0;
     text-indent: -99999px;
     font-size: 24px;
+    width: 50px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 4px;
@@ -206,7 +211,7 @@ section {
 }
 
 .navbar-default .navbar-brand {
-    background-image: url(../img/LOGOBW.png);
+    background-image: url("../img/LOGOBW.png");
 }
 
 .navbar-shrink .navbar-brand {
@@ -214,7 +219,7 @@ section {
 }
 
 .navbar-transparent .navbar-brand {
-    background-image: url(../img/LOGOBW.png);
+    background-image: url("../img/LOGOBW.png");
 }
 
 .navbar-inverse .navbar-brand {
@@ -223,11 +228,12 @@ section {
 
 /* Navbar links */
 .navbar-nav>li>a {
-    padding: 24px 0;
-    margin-left: 25px;
+    padding: 1rem 0;
+    margin-left: 1rem;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 600;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 /* Navbar dropdown */

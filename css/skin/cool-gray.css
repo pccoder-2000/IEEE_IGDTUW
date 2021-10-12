@@ -11,13 +11,13 @@ a, a:hover, a:focus {
 	color: #fff;
 }
 .navbar-default, .navbar-default.navbar-fixed-top.navbar-shrink {
-  background-color: #363940;
+  background-color: #212121cb;
 }
 .navbar-default .navbar-nav > li > a {
 	color: #a9a9a9;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav>.active>a {
-	color: #fff !important;
+	color: #32E0C4 !important;
 }
 .navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
 	color: #a9a9a9;
