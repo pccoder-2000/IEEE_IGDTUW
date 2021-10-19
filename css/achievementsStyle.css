@@ -67,7 +67,6 @@ body {
   padding-top: 20vh;
   text-align: center;
   font-size: 7vh;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color:rgb(239, 247, 247);
   animation-name: animation;
   animation-duration:7s;
@@ -80,20 +79,14 @@ body {
 .text-heading1{
   text-align: center;
   font-size:3vh;
-  font-family: 'Heebo', sans-serif;
   margin-top: 40px;
   color: #cfc6c6;
-  
-  
-  
-  
 }
 
 
 .wie{
 padding-top: 50px;
 font-size: 2.6vh;
-font-family: 'Heebo', sans-serif;
 color:#d8cccc;
 padding-bottom: 5vw;
 padding-top: 2vw;
@@ -188,7 +181,6 @@ body:before {
   color: #fff;
   font-size: 5vh;
   text-align: center;
-  font-family: 'Source Serif Pro', serif;
   
 }
 
@@ -440,13 +432,6 @@ h2{
   padding-top: 50px;
   color: #070707;
   
-}
-
-
-
-body {
-  text-align: center;
-  font-family: Arial;
 }
 
 .a-box {

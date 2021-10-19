@@ -1,18 +1,10 @@
-/*---------------------------------------------------------------------------------
-
-Master Stylesheet
-
-	Template:	 Unika - Responsive One Page HTML5 Template
-	Author:		 imransdesign.com
-	URL:		 http://imransdesign.com/
-    Designed By: https://www.behance.net/poljakova
-	Version:	1.0	
-
----------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 html {
   height: 100% !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -20,8 +12,8 @@ body {
   height: 100%;
   font-size: 14px;
   color: #fff;
+  background-image: url("https://github.com/AakankshaJha1/IEEE_IGDTUW/blob/main/img/ieee-bg-2.png?raw=true") ;
   background-color: #212121;
-  font-family: "Heebo", sans-serif;
   margin: auto;
 }
 
@@ -58,7 +50,6 @@ body .body {
 
 /* Begin Fonts */
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
   background-image: url("https://github.com/AakankshaJha1/IEEE_IGDTUW/blob/main/img/ieee-bg-2.png?raw=true") ;
     background-size: contain;
     background-repeat: no-repeat;
@@ -101,14 +92,13 @@ p {
   font: 14px/1.5em "Roboto";
 }
 
-.navbar-nav > li > a {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-
 /* End Fonts */
 .ieee-wie-logo {
   width: 90%;
   text-align: center;
+}
+.about{
+  margin-bottom: 2rem;
 }
 .about .row {
   width: 90%;
@@ -207,9 +197,6 @@ section {
   background-size: cover;
 }
 
-#header {
-  /* height: 98px; */
-}
 
 /* ===== Begin text colors ===== */
 .text-main {
@@ -231,39 +218,15 @@ section {
 
 /* Navbar brand (logo) */
 .navbar-brand {
-  background-repeat: no-repeat;
-  background-position: left center;
-  height: 100%;
-  background: url("../img/LOGOBW.png");
-  padding: 1rem 0;
-  text-indent: -99999px;
   font-size: 24px;
-  width: 50px;
   font-weight: 600;
-  line-height: 20px;
   letter-spacing: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.navbar-default .navbar-brand {
-  background-image: url("../img/LOGOBW.png");
-}
-
-.navbar-shrink .navbar-brand {
-  background-image: url(../img/LOGOBW.png);
-}
-
-.navbar-transparent .navbar-brand {
-  background-image: url("../img/LOGOBW.png");
-}
-
-.navbar-inverse .navbar-brand {
-  background-image: url(../img/LOGOBW.png);
-}
+} 
 
 /* Navbar links */
 .navbar-nav > li > a {
@@ -334,9 +297,6 @@ section {
 
 .navbar-shrink .navbar-brand {
   font-size: 20px;
-}
-
-.navbar-default.navbar-fixed-top.navbar-shrink .container {
 }
 
 .navbar-fixed-top.navbar-shrink .container {
@@ -524,6 +484,9 @@ a.rotate-box-2:hover {
 .rotate-box-1 .rotate-box-info {
   padding-left: 60px;
 }
+.rotate-box-1-wrapper{
+  margin: 2rem auto;
+}
 
 .rotate-box-1-wrapper .row{
     background-color: #212121ad;
@@ -559,8 +522,6 @@ a.rotate-box-2:hover {
 /* ===== End rotate boxes ===== */
 
 /* ===== Begin progress bar ===== */
-.skill-bar {
-}
 
 .progress {
   overflow: visible;
@@ -656,14 +617,6 @@ a.rotate-box-2:hover {
 /* ===== End testimonial ===== */
 
 /* ===== Begin Portfolio===== */
-.portfolio_area {
-}
-
-.portfolio {
-}
-
-.portfoloi_top {
-}
 
 .portfoloi_content_area {
   margin-top: -30px;
@@ -810,9 +763,6 @@ a.rotate-box-2:hover {
 
 .counter-up .cover {
   background-color: rgba(0, 7, 11, 0.8);
-}
-
-.counter-up .fact {
 }
 
 .counter-up .fact.last {
