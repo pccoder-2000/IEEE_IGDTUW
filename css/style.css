@@ -2,7 +2,7 @@ html {
   height: 100% !important;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 *{
   font-family: 'Roboto', sans-serif;
 }
@@ -89,7 +89,8 @@ h5 {
 }
 
 p {
-  font: 14px/1.5em "Roboto";
+  /* font-size: 14px/1.5em; */
+  line-height: 1.3rem;
 }
 
 /* End Fonts */
@@ -220,6 +221,7 @@ section {
 .navbar-brand {
   font-size: 24px;
   font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   letter-spacing: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -639,7 +641,6 @@ a.rotate-box-2:hover {
 }
 
 .portfolio_menu ul li a {
-  color: #363940;
   background: transparent;
   display: inline-block;
   margin: 4px;
@@ -1253,4 +1254,17 @@ p.subtitle {
         background-size: cover;
         /* background-size: 80%; */
     }
+}
+.membership-link{
+  background-color: #363940;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Rubik' sans-serif;
+  font-weight: 600;
+}
+.membership-link:hover{
+  background-color: #32E0C4;
+  color: #212121;
+  text-decoration: none;
 }

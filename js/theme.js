@@ -70,20 +70,20 @@ var cbpAnimatedHeader = (function() {
         }, false );
     }
 
-    function scrollPage() {
-        var sy = scrollY();
-        if ( sy >= changeHeaderOn ) {
-            classie.add( header, 'navbar-shrink' );
-        }
-        else {
-            classie.remove( header, 'navbar-shrink' );
-        }
-        didScroll = false;
-    }
+    // function scrollPage() {
+    //     var sy = scrollY();
+    //     if ( sy >= changeHeaderOn ) {
+    //         classie.add( header, 'navbar-shrink' );
+    //     }
+    //     else {
+    //         classie.remove( header, 'navbar-shrink' );
+    //     }
+    //     didScroll = false;
+    // }
 
-    function scrollY() {
-        return window.pageYOffset || docElem.scrollTop;
-    }
+    // function scrollY() {
+    //     return window.pageYOffset || docElem.scrollTop;
+    // }
 
     init();
 
