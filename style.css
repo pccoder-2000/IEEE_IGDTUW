@@ -118,13 +118,13 @@ p {
   height: 100%;
 }
 /*Logo Navbar*/
-.logo-image img{
+/* .logo-image img{
   width: 15%;
   height: 22%;
   border-radius: 50%;
   overflow: hidden;
   margin-top: -6px;
-  }
+  } */
 .about-details{
     text-align: justify;
     background-color: #212121ad;
