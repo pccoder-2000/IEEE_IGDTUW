@@ -98,8 +98,9 @@ body {
 .middle-heading,
 .heading2{
   font-family: 'Rubik', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
+
 
 /*************************** section 1 img and heading End ***********************/
 
@@ -222,15 +223,17 @@ body:before {
 /************************** carousel start **********************/
 
 .caro-head {
-  display: flex;
+  /* display: flex; */
   padding-top: 60px;
+  
 }
 
 .middle-heading {
   font-size: 1.5vw;
   padding-top: 30px;
   color: #fff;
-  margin-left: 40px;
+  /* margin-left: 40px; */
+  text-align: center;
 }
 
 .middle-container {
@@ -251,7 +254,7 @@ body:before {
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -266,8 +269,8 @@ body:before {
   opacity: 0;
   filter: drop-shadow(0 2px 2px #555);
   will-change: transform, opacity;
-  -webkit-animation: carousel-animate-vertical 27s linear infinite;
-  animation: carousel-animate-vertical 27s linear infinite;
+  -webkit-animation: carousel-animate-vertical 20s linear infinite;
+  animation: carousel-animate-vertical 15s linear infinite;
 }
 
 .carousel__item:nth-child(1) {
