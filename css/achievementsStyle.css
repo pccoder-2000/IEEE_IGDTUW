@@ -1,481 +1,659 @@
-/* :root {
-  --crsl-bg: transparent;
-  --box-bg: #e0e0e0;
-  --box-shadow: #0000001c;
-  --box-shadow-border: #0000000f;
-  --box-border: rgba(75, 75, 75, 0.096);
-} */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-.achievement-container {
-  text-align: center;
-}
+<!doctype html>
+<html>
 
-.achievement-container .col-sm-6 .card-body,
-.achievement-container .col-md-3 .card-body {
-  text-align: center;
-}
+<head>
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background: #2f3539;
-  /* background: -moz-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-    background: -webkit-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-    background: radial-gradient(circle, #2f3539 0%, #1e272e 100%); */
-  background: -moz-radial-gradient(circle, #ffffff 0%, #e4e4e4 100%);
-  background: -webkit-radial-gradient(circle, #e4e4e4 0%, #ffffff 100%);
-  background: radial-gradient(circle, #e4e4e4 0%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539", endColorstr="#1e272e", GradientType=1);
-}
-
-html > p,
-body > p {
-  font-size: 0.95px;
-  font-weight: bold;
-  position: absolute;
-  top: 7.5%;
-  width: 100%;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-align: left;
-  color: white;
-  user-select: none;
-}
-
-body {
-  background-color: #212121;
-  color: #fff;
-  background-image: url("https://github.com/AakankshaJha1/IEEE_IGDTUW/blob/main/img/ieee-bg-2.png?raw=true");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: auto;
-}
-
-/*************************** section 1 img and heading Start ***********************/
-
-.heading-main {
-  padding-top: 20vh;
-  text-align: center;
-  font-size: 7vh;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-family: 'Rubik', sans-serif;
-  color: rgb(239, 247, 247);
-  animation-name: animation;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  text-shadow: 1px 1px 2px black, 0 0 25px rgb(106, 208, 240),
-    0 0 5px rgb(77, 164, 223);
-}
-
-/* .text-heading1 {
-  text-align: center;
-  font-size: 3vh;
-  margin-top: 40px;
-  line-height: 1.5rem;
-  color: #cfc6c6;
-}
-
-.wie {
-  padding-top: 50px;
-  line-height: 1.5rem;
-  font-size: 2.6vh;
-  color: #d8cccc;
-  padding-bottom: 5vw;
-  padding-top: 2vw;
-  margin-top: 50px;
-  text-align: center;
-  letter-spacing: 2px;
-} */
-
-#first,
-#second,
-#third,
-.middle-heading,
-.heading2{
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE Achievements</title>
+  <meta name="description" content="IEEE website">
+  <meta name="author" content="">
 
 
-/*************************** section 1 img and heading End ***********************/
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Libs and Plugins CSS -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="inc/animations/css/animate.min.css">
+  <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+  <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
 
-/*************************** Buttons Start ***********************/
-body:before,
-.btn {
-  display: inline-block;
-  vertical-align: middle;
-}
 
-body:before {
-  height: 100%;
-  content: "";
-}
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
-.btn,
-.btn:before,
-.btn:after {
-  cursor: pointer;
-  padding: 1em 4em;
-  display: inline-block;
-  background-color: rgba(2, 15, 26, 0.6);
-  color: rgb(231, 220, 220);
-  border-radius: 6px;
-  position: relative;
-  -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-}
+  <!-- Skin CSS -->
+  <link rel="stylesheet" href="css/skin/cool-gray.css">
+  <link rel="stylesheet" href="css/achievementsStyle.css">
+  <!-- <link rel="stylesheet" href="css/skin/ice-blue.css"> -->
+  <!-- <link rel="stylesheet" href="css/skin/summer-orange.css"> -->
+  <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
+  <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
 
-.btn:before,
-.btn:after {
-  position: absolute;
-  content: attr(data-title);
-  z-index: -1;
-}
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
-.btn:before {
-  top: -0.1em;
-  right: -0.1em;
-}
 
-.btn:after {
-  bottom: -0.1em;
-  left: -0.1em;
-}
-
-.btn:hover {
-  box-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.5);
-  color: rgb(252, 248, 248);
-  background-color: gray;
-}
-
-.btn:hover:before {
-  top: 0;
-  right: 0;
-}
-.btn:hover:after {
-  bottom: 0;
-  left: 0;
-}
-.btn {
-  background-color: #302d2d;
   
-}
-/*************************** Buttons end ***********************/
 
-.heading {
-  padding-top: 110px;
-  color: #fff;
-  font-size: 4vh;
-  word-spacing: 0.8px;
-  text-align: center;
-}
+</head>
 
-/*************************** card Start ***********************/
-.card {
-  min-height: 60vh;
-  height: auto;
-}
+<body data-spy="scroll" data-target="#main-navbar">
+  <div class="page-loader">
+    <!-- Display loading image while page loads -->
+  </div>
+  <div class="body">
 
-.card {
-  /* text-align: justify; */
-  /* background-color: #212121ad; */
-  background-color: #3a3838ad;
-  border-radius: 10px;
-}
-/* .card h5{
-  font-size: 1.3vw;
-  padding: auto 1rem;
-} */
+    <!--========== BEGIN HEADER ==========-->
+    <header id="header" class="header-main">
 
-.card:hover {
-  background-color: #32e0c3a1;
-  color: #fff;
-}
-.card-img-top {
-  width: 60%;
-  border-radius: 60%;
-  margin: 2rem 20%;
-  object-fit:fill;
-  height:12rem;
-}
-.card-text {
-  padding-top: 1rem;
-  font-size: 2vh;
-  word-spacing: 5px;
-}
+      <!-- Begin Navbar -->
+      <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
 
-.card-title{
-  padding-top:18px;
-  font-size: 2.2vh;
-}
+        <div class="container">
 
-.card-subtitle{
-  padding-top:0.8vh;
-}
-/*************************** card end ***********************/
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">IEEE IGDTUW</a>
+          </div>
 
-/************************** carousel start **********************/
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="">WIE IGDTUW</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>  
+                <li><a href="contact.html">Contact</a></li>  
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+      <!-- End Navbar -->
 
-.caro-head {
-  /* display: flex; */
-  padding-top: 60px;
-  
-}
+    </header>
+    <!-- ========= END HEADER =========-->
 
-.middle-heading {
-  font-size: 1.5vw;
-  padding-top: 30px;
-  color: #fff;
-  /* margin-left: 40px; */
-  text-align: center;
-}
+    <!--==============================================================================================================
+                                                        PUT YOUR CODE HERE
+            ===================================================================================================================-->
+    <!-- Begin Services -->
 
-.middle-container {
-  display: flex;
-}
+    <body>
+
+      <!-- <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/igdtuwbuilding2.jpeg); object-fit: fill;"> -->
+       
+
+          <!-- <div class=  "img-trophy" style="background-image: url(img/achievement-pics/ieee-bg-2.png);"></div> -->
+          
+          <div class="container bottom-container achievement-container">
+            <p class="heading-main">ACHIEVEMENTS</p>
+            <!-- <p class="text-heading1" >The contributions of IEEE IGDTUW has always aimed to assist IEEE reach new highs and
+              laurels.A few of these contributions were recognized and awarded formally.</p>
+    
+              <h2 class="wie">WIEC selected the IEEE WIE Indira Gandhi Delhi Technical University for Women Student Branch Affinity Group as the recipient of an Honorable Mention on the 2016 WIE Student Branch Affinity Group of the Year Award</h2> -->
+    
+    
+              <!-- buttons -->
+    
+              <a href='#first'>
+                <button class="btn" style="margin-top:90px; margin-right: 50px; " data-title="2020" >
+                    2020
+                </button>
+            </a>
+    
+            <a href='#second'>
+              <button class="btn" style="margin-top:90px; margin-right: 50px" data-title="2019" >
+                  2019
+              </button>
+          </a>
+             
+          <a href='#third'>
+            <button class="btn" style="margin-top:90px;" data-title="2018" >
+                2018
+            </button>
+        </a>
+        
+      <!-- </div> -->
+           
+              
+            <p class="heading" id="first" >IEEE Delhi Section Award Ceremony 2020 </p>
+    
+            <!-- Begin Team Info -->
+    
+            <!-- card start -->
+    
+            <div class="container" style="padding-top:10px;" data-aos="zoom-in-up">
+              <div class="row" >
+                <div class="col-sm-6 col-md-3" data-aos="zoom-in-up">
+                  <div class="card" style="margin-top: 40px;">
+                    <img src="img/achievement-pics/pic1.png" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">DR. JASDEEP KAUR DHANOA</h5>
+                      <h6 class="card-subtitle">BRANCH COUNSELOR</h6>
+                      <p class="card-text"> Received prolong Excellence Award IEEE IGDTUW under the guidance of Dr. Jasdeep Kaur Dhanoa  </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;">
+                    <img src="img/achievement-pics/satwika bhatt.png" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title"> Satwika Bhattacharjee</h5>
+                      <h6 class="card-subtitle">ECE Batch 2017-21</h6>
+                      <p class="card-text"> Received J.K. Pal Memorial Award in the year 2020.</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;">
+                    <img src="img/achievement-pics/himanshi gupta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> Himanshi Gupta
+                      </h5>
+                      <h6 class="card-subtitle">ECE Batch 2018-22</h6>
+                      <p class="card-text"> Received Outstanding Student Volunteer Award in the year 2020. </p>
+                    </div>
+                  </div>
+                </div>
+    
+               
+          
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;">
+                    <img src="img/achievement-pics/mansi.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">  Mansi Kesharwani </h5>                
+                        <h6 class="card-subtitle">ECE Batch 2017-21</h6>
+                      <p class="card-text"> Received WIE Outstanding Volunteer Award in the year 2020.  </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              
+    
+                <!-- card end -->
+    
+                
+    
+    
+    
+                <div class="row">
+                  <div class="caro-head">
+                  <h2 class="middle-heading" style="padding-top: 30px;  ">IEEE Delhi Section Student Network (SSN) Award </h2>
+                  <!-- <h2 class="middle-heading" style="padding-top: 30px; margin-right: 100px;"> IEEE Delhi Section WIE Affinity Group Award</h2> -->
+                <!-- </div> -->
+    
+    
+                
+                  <div class="middle-container">
+                  <div class='wrapper1' style="padding-top: 200px;">
+                    <div class='carousel'>
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                          <img src="img/achievement-pics/divya pant.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'>Divya Pant  </p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                          <img src="img/achievement-pics/hira-k.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'> Hira Qureshi</p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+    
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                         <img src="img/achievement-pics/kashika.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'> Kashika Hingorani</p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+    
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                          <img src="img/achievement-pics/rishita anad.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'>  Rishita Anand Sachdeva 
+                          </p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                  
+    
+    
+                  <!-- 2 -->
+                  <div class="row">
+                    <div class="caro-head">
+                    <!-- <h2 class="middle-heading" style="padding-top: 30px; margin-left: 100px; ">IEEE Delhi Section Student Network (SSN) Award </h2> -->
+                    <h2 class="middle-heading" style="padding-top: 30px; margin-right: 100px;"> IEEE Delhi Section WIE Affinity Group Award</h2>
+                  </div>
+                 
+                  <div class='wrapper1' style="padding-top: 200px;">
+                    <div class='carousel'>
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                          <img src="img/achievement-pics/ananya sonkar.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'> Ananya Sonkar  </p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                          <img src="img/achievement-pics/nikitapal.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'> Nikita Pal </p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+                      <div class='carousel__item'>
+                        <div class='carousel__item-head'>
+                        <img src="img/achievement-pics/nishtha-mahajan.png" class="img-new">
+                        </div>
+                        <div class='carousel__item-body'>
+                          <p class='title'> Nishtha Mahajan </p>
+                          <p style="color: black;">ECE Batch 2018-22</p>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  
+                  
+    
+                 <p class="heading" id="second" style="padding-top: 190px;">IEEE Delhi Section Award Ceremony 2019 </p>
+    
+                 <!-- card start -->
+    
+                <div class="row" id="second">
+    
+                  <div class="col-sm-6 col-md-3">
+                    <div class="card" style="margin-top: 40px; min-height:65vh; " >
+                      <img src="img/achievement-pics/pic1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">DR. JASDEEP KAUR DHANOA</h5>
+                        <h6 class="card-subtitle">BRANCH COUNSELOR</h6>
+                        <p class="card-text"> Was awarded for her extraordinary contribution and dedication towards IEEE Delhi Section.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;  min-height:65vh;">
+                    <img src="img/achievement-pics/pic2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NIHARIKA KARANA</h5>
+                      <h6 class="card-subtitle">ECE Batch of 2019</h6>
+                      <p class="card-text">Received Dr JK Pal Memorial Best Student Award during the IEEE Delhi Section
+                        Student
+                        Awards Ceremony 2019 held on June 3 at Manav Rachna University. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+               
+    
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;  min-height:65vh;">
+                    <img src="img/achievement-pics/pic3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">PEARL PULLAN</h5>
+                      <h6 class="card-subtitle">ECE Batch of 2019</h6>
+                      <p class="card-text">Received the Outstanding Student Volunteer Award during the IEEE Delhi Section. She was the WIE Chairperson for the 2018-19 session.</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;  min-height:65vh; ">
+                    <img src="img/achievement-pics/pic4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NAZISH ISLAM</h5>
+                      <h6 class="card-subtitle">ECE Batch of 2019</h6>
+                      <p class="card-text">Received the Outstanding WIE Student Volunteer Award during the IEEE Delhi
+                        Section. She was appreciated for her enormous contribution in IEEE Delhi Section Student Network as a Graphic Designer. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+    
+              <!-- card end -->
+    
+              
+    
+              <p class="heading2">The following members were appreciated for their enormous contribution in IEEE Delhi Section Student Network: </p>
+              
+              <div class="middle-container2">
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;  min-height:55vh; ">
+                    <img src="img/achievement-pics/sonalika sahoo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sonalika Sahoo</h5>
+                      <h6 class="card-subtitle">ECE Batch of 2019</h6>
+                      <h2>Social Media Coordinator</h2>
+                      
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;  min-height:55vh;">
+                    <img src="img/achievement-pics/khyati bisht.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Khyati Bisht</h5>
+                      <h6 class="card-subtitle">ECE Batch 2016-20</h6>
+                      <h2>WIE Coordinator</h2>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;  min-height:55vh;">
+                    <img src="img/achievement-pics/pic4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NAZISH ISLAM</h5>
+                      <h6 class="card-subtitle">ECE Batch 2016-20</h6>
+                      <h2>Graphic Designer</h2>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+    
+                <!-- first -->
+      
+               <!-- <div class="a-box">
+               <div class="img-container">
+               <div class="img-inner">
+              <div class="inner-skew">
+            <img src="img/achievement-pics/sonalika sahoo.png">
+             </div>
+            </div>
+            </div>
+    
+       <div class="text-container">
+        <h3> Sonalika Sahoo </h3>
+        <h2 class="ieee-head"> ECE Batch 2015-19</h2>
+        <div>
+           <h2 class="ieee-head" > Social Media Coordinator</h2>
+      </div>
+    </div>
+    </div> -->
+    
+    <!-- second -->
+    
+    <!-- <div class="a-box">
+      <div class="img-container">
+        <div class="img-inner">
+          <div class="inner-skew">
+            <img src="img/achievement-pics/khyati bisht.png">
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-container">
+        <h3> Khyati Bisht </h3>
+        <h2 class="ieee-head"> ECE Batch 2016-20</h2>
+        <div>
+          <h2 class="ieee-head" >  WIE Coordinator
+          </h2>
+      </div>
+    </div>
+    </div> -->
+    
+    
+     <!-- third -->
+    
+    
+    <!-- <div class="a-box">
+      <div class="img-container">
+        <div class="img-inner">
+          <div class="inner-skew">
+            <img  src="img/achievement-pics/pic4.png">
+          </div>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Nazish Islam</h3>
+        <h2 class="ieee-head"> ECE Batch 2016-20</h2>
+        <div>
+          <h2 class="ieee-head"> Graphic Designer
+    
+          </h2>
+      </div>
+    </div>
+    </div>
+    </div> -->
+    
+              
+              <!-- **************************************************************** -->
+    
+              <p class="heading" id="third" style="padding-top: 160px;">IEEE Delhi Section Award Ceremony 2018 </p>
+    
+              <div class="row">
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px; min-height:65vh;">
+                    <img src="img/achievement-pics/pic1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">DR. JASDEEP KAUR DHANOA</h5>
+                      <h6 class="card-subtitle">BRANCH COUNSELOR</h6>
+                      <p class="card-text"> Was awarded with Outstanding Branch Counselor Award 2018.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+    
+               
+    
+                
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px; min-height:65vh;">
+                    <img src="img/achievement-pics/pic8.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">DIKSHA VASUDEV </h5>
+                      <h6 class="card-subtitle">ECE Batch of 2019</h6>
+                      <p class="card-text"> Was appreciated for her enormous contribution as a Section Student Representative.
+    
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+              
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px;min-height:65vh;">
+                    <img src="img/achievement-pics/sonalika sahoo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sonalika Sahoo </h5>
+                      <h6 class="card-subtitle">ECE Batch of 2015</h6>
+                      <p class="card-text">Received Outstanding WIE Student Volunteer Award.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              
+    
+                <div class="col-sm-6 col-md-3">
+                  <div class="card" style="margin-top: 40px; min-height:65vh;">
+                    <img src="img/achievement-pics/manasi shakya.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">MANASI SHAKYA </h5>
+                      <h6 class="card-subtitle">ECE Batch of 2018</h6>
+                      <p class="card-text">Received Dr JK Pal Memorial Best Student Award    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          </div>
+        
+          
+    
+    
+    
+    
+          <!-- End Team Info -->
+    
+          
+    
+    
+    
+    
+    
+          <!-- Begin footer -->
+          <footer class="text-off-white">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row wow bounceInLeft" data-wow-delay="0.4s">
+                        <div class="col-sm-6 col-md-4">
+                            <h4>Meet us At</h4>
+                            <p style="padding-block: 2">
+                                Indira Gandhi Delhi Technical University for Women, New Church
+                                Rd, Opp. St James Church, Kashmere Gate, Delhi 110006
+                                <br />
+                                Mail us at- <br />
+                                <i class="fas fa-envelope" style="margin-right: 5px"></i><a
+                                    href="mailto:igdtuieee@gmail.com" class="contact-email">igdtuieee@gmail.com</a>
+                            </p>
+                            <div class="media-icons">
+                                <a href="https://www.facebook.com/ieeeigdtuw/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ieeeigdtuw/?igshid=vkkkocbwtcjc&hl=en"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/ieee-igdtuw/?originalSubdomain=in"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+    
+                                <a href="https://t.me/joinchat/qv4BIBIyrQRhM2Q1" target="_blank">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <h4>Useful Links</h4>
+                            <ul class="imp-links">
+                                <li><a href="index.html#about-section">About Us</a></li>
+                                <li><a href="">WIE IGDTUW</a></li>
+                                <li>
+                                    <a href="achievements.html">Awards and Achievements</a>
+                                </li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="index.html#cta-section">Newsletter</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li>
+                                    <a href="team.html#placement">Placement/Internship</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-sm-6 col-md-4">
+                            <h4>New member of IEEE from IGDTUW?</h4>
+                            <p style="padding-block: 2">
+                                <a href="https://t.me/joinchat/qv4BIBIyrQRhM2Q1">Register here</a>
+                                <br />
+                                <br />
+                                For any membership related query, mail us at-<br />
+                                <i class="fas fa-envelope" style="margin-right: 5px"></i><a
+                                    href="mailto:himanshigupta@ieee.org"
+                                    class="contact-email">himanshigupta@ieee.org</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+    
+            <div class="footer">
+                <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
+                    <p class="theme-author">
+                        Copyright &copy; <a href="" class="Copyright">IEEE IGDTUW</a> All
+                        rights reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+    
+    
+    
+          <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+    
+      </div><!-- body ends -->
+    
+    
+    
+    
+      <!-- Plugins JS -->
+      <script src="inc/jquery/jquery-1.11.1.min.js"></script>
+      <script src="inc/bootstrap/js/bootstrap.min.js"></script>
+      <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+      <script src="inc/stellar/js/jquery.stellar.min.js"></script>
+      <script src="inc/animations/js/wow.min.js"></script>
+      <script src="inc/waypoints.min.js"></script>
+      <script src="inc/isotope.pkgd.min.js"></script>
+      <script src="inc/classie.js"></script>
+      <script src="inc/jquery.easing.min.js"></script>
+      <script src="inc/jquery.counterup.min.js"></script>
+      <script src="inc/smoothscroll.js"></script>
+    
+      
+      <!-- Theme JS -->
+      <script src="js/theme.js"></script>
+      <!-- <script src="./js/achievement.js"></script> -->
+    
+    </body>
 
 
-.wrapper1 {
-  background: linear-gradient(60deg, white white);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 100px;
-  padding-top: 50px;
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carousel__item {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  padding: 0 12px;
-  opacity: 0;
-  filter: drop-shadow(0 2px 2px #555);
-  will-change: transform, opacity;
-  -webkit-animation: carousel-animate-vertical 20s linear infinite;
-  animation: carousel-animate-vertical 15s linear infinite;
-}
-
-.carousel__item:nth-child(1) {
-  -webkit-animation-delay: calc(3s * -1);
-  animation-delay: calc(3s * -1);
-}
-
-.carousel__item:nth-child(2) {
-  -webkit-animation-delay: calc(3s * 0);
-  animation-delay: calc(3s * 0);
-}
-
-.carousel__item:nth-child(3) {
-  -webkit-animation-delay: calc(3s * 1);
-  animation-delay: calc(3s * 1);
-}
-
-.carousel__item:last-child {
-  -webkit-animation-delay: calc(-3s * 2);
-  animation-delay: calc(-3s * 2);
-}
-
-.carousel__item-head {
-  border-radius: 50%;
-  background-color: #d7f7fc;
-  width: 90px;
-  height: 90px;
-  padding: 14px;
-  position: relative;
-  margin-right: -45px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3vh;
-}
-
-.carousel__item-body {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 16px 20px 16px 70px;
-}
-
-.title {
-  text-transform: uppercase;
-  font-size: 2vh;
-  margin-top: 10px;
-}
-
-@-webkit-keyframes carousel-animate-vertical {
-  0% {
-    transform: translateY(100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  3%,
-  11.1111111111% {
-    transform: translateY(100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  14.1111111111%,
-  22.2222222222% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  25.2222222222%,
-  33.3333333333% {
-    transform: translateY(-100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  36.3333333333% {
-    transform: translateY(-100%) scale(0.5);
-    opacity: 0;
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(-100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes carousel-animate-vertical {
-  0% {
-    transform: translateY(100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  3%,
-  11.1111111111% {
-    transform: translateY(100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  14.1111111111%,
-  22.2222222222% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  25.2222222222%,
-  33.3333333333% {
-    transform: translateY(-100%) scale(0.7);
-    opacity: 0.4;
-    visibility: visible;
-  }
-  36.3333333333% {
-    transform: translateY(-100%) scale(0.5);
-    opacity: 0;
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(-100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-.img-new {
-  height: 100px;
-}
-
-/********************* carousel end ************************************/
-
-/********************** start**********************/
-
-/* .ieee-head {
-  color: #070707;
-  font-size: 1.6vh;
-} */
-
-h2 {
-  font-size: 1.4vh;
-}
-
-.heading2 {
-  font-size: 5vh;
-  line-height: normal;
-  margin: 2rem auto;
-}
-
-.middle-container2{
-  margin-left: 12em;
-  
-/* 
-.a-box {
-  display: inline-block;
-  margin: 1rem;
-  width: 240px;
-  text-align: center;
-} */
-
-/* .img-container {
-  height: 230px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 0px 0px 20px 20px;
-  display: inline-block;
-}
-
-.img-container img {
-  height: 100%;
-  width: 100%;
-} */
-
-/* .inner-skew {
-  display: inline-block;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 0px;
-  font-size: 0px;
-  margin: 30px 0px 0px 0px;
-  background: #c8c2c2;
-  height: 250px;
-  width: 200px;
-} */
-
-.text-container {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  padding: 120px 20px 20px 20px;
-  border-radius: 20px;
-  background: #fff;
-  margin: -120px 0px 0px 0px;
-  line-height: 19px;
-}
-
-.text-container h3 {
-  margin: 20px 0px 10px 0px;
-  color: #04bcff;
-  font-size: 2.4vh;
-}
-
-/************************End**********************/
-
-footer {
-  margin-top: 150px;
-}
-
-@media only screen and (max-width: 600px) {
-  .btn {
-    width: 80%;
-    display: flex;
-  }
-}
+</html>
