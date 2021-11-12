@@ -150,7 +150,13 @@ p {
   width: 600px;
   margin-top: -50px;
 }
-
+.logo-image img {
+    width: 15%;
+    height: 22%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
 section {
   position: relative;
 }
