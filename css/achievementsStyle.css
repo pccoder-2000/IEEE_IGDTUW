@@ -72,7 +72,7 @@ body {
     0 0 5px rgb(77, 164, 223);
 }
 
-.text-heading1 {
+/* .text-heading1 {
   text-align: center;
   font-size: 3vh;
   margin-top: 40px;
@@ -90,7 +90,7 @@ body {
   margin-top: 50px;
   text-align: center;
   letter-spacing: 2px;
-}
+} */
 
 #first,
 #second,
@@ -163,13 +163,15 @@ body:before {
 }
 .btn {
   background-color: #302d2d;
+  
 }
 /*************************** Buttons end ***********************/
 
 .heading {
-  padding-top: 210px;
+  padding-top: 110px;
   color: #fff;
-  font-size: 5vh;
+  font-size: 4vh;
+  word-spacing: 0.8px;
   text-align: center;
 }
 
@@ -185,24 +187,35 @@ body:before {
   background-color: #3a3838ad;
   border-radius: 10px;
 }
-.card h5{
+/* .card h5{
   font-size: 1.3vw;
   padding: auto 1rem;
-}
+} */
+
 .card:hover {
   background-color: #32e0c3a1;
   color: #fff;
 }
 .card-img-top {
   width: 60%;
-  border-radius: 50%;
+  border-radius: 60%;
   margin: 2rem 20%;
-  object-fit: fill;
+  object-fit:fill;
+  height:12rem;
 }
 .card-text {
-  padding: 1rem;
-  font-size: 1.8vh;
-  word-spacing: 3px;
+  padding-top: 1rem;
+  font-size: 2vh;
+  word-spacing: 5px;
+}
+
+.card-title{
+  padding-top:18px;
+  font-size: 2.2vh;
+}
+
+.card-subtitle{
+  padding-top:0.8vh;
 }
 /*************************** card end ***********************/
 
@@ -223,6 +236,7 @@ body:before {
 .middle-container {
   display: flex;
 }
+
 
 .wrapper1 {
   background: linear-gradient(60deg, white white);
@@ -384,13 +398,13 @@ body:before {
 
 /********************** start**********************/
 
-.ieee-head {
+/* .ieee-head {
   color: #070707;
   font-size: 1.6vh;
-}
+} */
 
 h2 {
-  font-size: 1vw;
+  font-size: 1.4vh;
 }
 
 .heading2 {
@@ -399,14 +413,18 @@ h2 {
   margin: 2rem auto;
 }
 
+.middle-container2{
+  margin-left: 12em;
+  
+/* 
 .a-box {
   display: inline-block;
   margin: 1rem;
   width: 240px;
   text-align: center;
-}
+} */
 
-.img-container {
+/* .img-container {
   height: 230px;
   width: 200px;
   overflow: hidden;
@@ -417,9 +435,9 @@ h2 {
 .img-container img {
   height: 100%;
   width: 100%;
-}
+} */
 
-.inner-skew {
+/* .inner-skew {
   display: inline-block;
   border-radius: 20px;
   overflow: hidden;
@@ -429,7 +447,7 @@ h2 {
   background: #c8c2c2;
   height: 250px;
   width: 200px;
-}
+} */
 
 .text-container {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
