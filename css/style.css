@@ -20,7 +20,10 @@ body {
 body .body {
   height: 100%;
 }
-
+.button1 {background-color: black;}
+.button1:hover{
+  color :green;
+}
 .cover {
   position: absolute;
   width: 100%;
